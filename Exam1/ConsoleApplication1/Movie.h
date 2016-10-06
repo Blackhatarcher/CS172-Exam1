@@ -6,7 +6,7 @@ class Movie
 private:
 	std::string title;
 	std::string genre;
-	int Showtime;
+	int showtime;
 public:
 	Movie();
 	Movie(std::string Title,std::string Genre, int Showtime);
