@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include "Movie.h"
-class Theatre
+class Theater
 {
 private:
 	std::string name;
@@ -16,6 +16,6 @@ public:
 	int GetShowTimeForGenre(std::string Genre);
 	int GetPopcornPrice();
 	int GetCokePrice();
-	Theatre(std::string Name, std::string Phone);
+	Theater(std::string Name, std::string Phone);
 };
 
