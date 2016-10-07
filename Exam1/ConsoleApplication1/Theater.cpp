@@ -28,18 +28,19 @@ std::string Theater::GetMovieForHour(int Hour) {
 	std::string response = "";
 	for (int i = 0; i < 1000; i++) {
 		//see if it has the right hour
-		if (movies[i].GetShowtime == Hour) {
+		if (movies[i].GetShowtime() == Hour) {
 			//if it does then set the response to the movie's title
 			response = movies[i].GetTitle();
 		}
 	}
+	return response;
 }
 int Theater::GetShowTimeForGenre(std::string Genre) {
 	//search array
 	int response = -1;
 	for (int i = 0; i < 1000; i++) {
 		//check if the genre matches
-		if ((movies[i].GetGenre).compare(Genre)) {
+		if ((movies[i].GetGenre().compare(Genre) == 0)) {
 			//set the response to the showtime of that movie
 			response = movies[i].GetShowtime();
 		}
