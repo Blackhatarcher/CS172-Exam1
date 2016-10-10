@@ -1,3 +1,4 @@
+//I affirm that all the code given below was written solely by me, Christian Williams, and that any help I received adhered to the rules stated for this exam.
 #pragma once
 #include <string>
 
